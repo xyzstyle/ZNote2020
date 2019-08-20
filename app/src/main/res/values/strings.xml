@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">zNote</string>
+    <string name="note_title">新建笔记</string>
+    <string name="note_content">开始书写</string>
+
+
+</resources>

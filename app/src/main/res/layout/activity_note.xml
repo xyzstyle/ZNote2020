@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/note_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/note_title"
+
+            android:autofillHints="@string/note_title"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/note_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="@string/note_content"/>
+
+
+    <RelativeLayout
+        android:id="@+id/editBottomNormalTool"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:padding="12.0dip">
+
+        <ImageView
+            android:id="@+id/toolKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_icon_keyboard"/>
+
+
+
+        <ImageView
+            android:id="@+id/toolTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/toolFont"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_icon_todo_unchecked"/>
+
+        <ImageView
+            android:id="@+id/toolFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/toolRecord"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_icon_font_unchecked"/>
+
+        <ImageView
+            android:id="@+id/toolRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/toolPhoto"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_icon_record_unchecked"/>
+
+        <ImageView
+            android:id="@+id/toolPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/toolCamera"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_icon_photo_unchecked"/>
+
+        <ImageView
+            android:id="@+id/toolCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="17dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_icon_camera_unchecked"/>
+    </RelativeLayout>
+</LinearLayout>
