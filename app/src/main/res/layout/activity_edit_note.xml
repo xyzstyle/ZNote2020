@@ -3,8 +3,19 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/background_circular_progress_button_true"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolBarTheme"
+        />
+
 
     <LinearLayout
         android:id="@+id/LinearLayout01"
@@ -21,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="@string/note_title"
-
+            android:inputType="text"
             android:autofillHints="@string/note_title"
             />
 

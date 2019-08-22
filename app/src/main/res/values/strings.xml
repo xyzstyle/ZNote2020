@@ -2,6 +2,24 @@
     <string name="app_name">zNote</string>
     <string name="note_title">新建笔记</string>
     <string name="note_content">开始书写</string>
-
+    <string name="menu_save_note">保存笔记</string>
+    <string name="menu_delete_note">删除笔记</string>
+    <string name="menu_edit_cancel">放弃编辑</string>
+    <string name="menu_undo">撤回</string>
+    <string name="menu_redo">重做</string>
+    <string name="menu_edit_note">编辑笔记</string>
+    <string name="menu_remind">设置提醒</string>
+    <string name="menu_font_size">字体大小</string>
+    <string name="menu_note_msg">笔记信息</string>
+    <string name="menu_search_in_note">笔记内查找</string>
+    <string name="note_text_temp">Styles and themes on Android allow you to separate the details of your app design from the UI structure and behavior, similar to stylesheets in web design.
+        A style is a collection of attributes that specify the appearance for a single View. A style can specify attributes such as font color, font size, background color, and much more.
+        A theme is a type of style that is applied to an entire app, activity, or view hierarchy not just an individual view. When you apply your style as a theme, every view in the app or activity applies each style attribute that it supports.
+        Themes can also apply styles to non-view elements, such as the status bar and window background.Styles and themes are declared in a style resource file in res/values/, usually named styles.xml.
+        Create and apply a style  To create a new style or theme, open your project is res values  styles.xml file. For each style you want to create, follow these steps:
+        The name in each item specifies an attribute you would otherwise use as an XML attribute in your layout. The value in the item element is the value for that attribute.
+        For example, if you define the following style:
+        When creating your own styles, you should always extend an existing style from the framework or support library so that you maintain compatibility with platform UI styles. To extend a style, specify the style you want to extend with the parent attribute. You can then override the inherited style attributes and add new ones.
+    </string>
 
 </resources>
