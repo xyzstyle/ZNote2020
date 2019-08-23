@@ -8,7 +8,7 @@
               tools:context=".MainActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar_edit_note"
         android:layout_width="match_parent"
         app:navigationIcon="@drawable/background_circular_progress_button_true"
         android:layout_height="?android:attr/actionBarSize"
@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:id="@+id/LinearLayout01"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:paddingTop="4dp"
@@ -27,7 +27,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/note_name"
+            android:id="@+id/edt_note_name"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -40,7 +40,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/note_detail"
+        android:id="@+id/edt_note_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -49,7 +49,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/editBottomNormalTool"
+        android:id="@+id/relative_edit_bottom_tool"
         android:layout_width="match_parent"
         android:layout_height="48.0dip"
         android:gravity="center_vertical"
@@ -57,7 +57,7 @@
         android:padding="12.0dip">
 
         <ImageView
-            android:id="@+id/toolKeyboard"
+            android:id="@+id/img_tool_keyboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
@@ -67,47 +67,47 @@
 
 
         <ImageView
-            android:id="@+id/toolTodo"
+            android:id="@+id/img_tool_todo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_toStartOf="@id/toolFont"
+            android:layout_toStartOf="@id/img_tool_font"
             android:contentDescription="@string/app_name"
             android:src="@drawable/edit_icon_todo_unchecked"/>
 
         <ImageView
-            android:id="@+id/toolFont"
+            android:id="@+id/img_tool_font"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_toStartOf="@id/toolRecord"
+            android:layout_toStartOf="@id/img_tool_record"
             android:contentDescription="@string/app_name"
             android:src="@drawable/edit_icon_font_unchecked"/>
 
         <ImageView
-            android:id="@+id/toolRecord"
+            android:id="@+id/img_tool_record"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_toStartOf="@id/toolPhoto"
+            android:layout_toStartOf="@id/img_tool_photo"
             android:contentDescription="@string/app_name"
             android:src="@drawable/edit_icon_record_unchecked"/>
 
         <ImageView
-            android:id="@+id/toolPhoto"
+            android:id="@+id/img_tool_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@id/toolCamera"
+            android:layout_toStartOf="@id/img_tool_camera"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/edit_icon_photo_unchecked"/>
 
         <ImageView
-            android:id="@+id/toolCamera"
+            android:id="@+id/img_tool_camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
