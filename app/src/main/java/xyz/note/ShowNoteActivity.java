@@ -8,8 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 /**
  * Created by xyz on 2019/8/22.
  * Project Name:ZNote2020
@@ -37,7 +35,6 @@ public class ShowNoteActivity extends AppCompatActivity {
                         intent.putExtra("content", mNoteContentTv.getText().toString());
                         startActivity(intent);
                 }
-
                 return false;
             }
         });
