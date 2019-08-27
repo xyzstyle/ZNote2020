@@ -9,7 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import xyz.db.NotesDao;
 
 
 /**
@@ -34,6 +35,7 @@ public class EditNoteActivity extends AppCompatActivity {
         }
         Toolbar toolbar = findViewById(R.id.toolbar_edit_note);
         toolbar.inflateMenu(R.menu.toolbar_edit_note);
+
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
@@ -43,6 +45,7 @@ public class EditNoteActivity extends AppCompatActivity {
                         EditNoteActivity.this.finish();
                         break;
                     case R.id.action_menu_save_note:
+                        saveNote();
                         break;
 
                     default:
@@ -55,7 +58,7 @@ public class EditNoteActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(EditNoteActivity.this,"back",Toast.LENGTH_LONG).show();
+                saveNote();
                 EditNoteActivity.this.finish();
             }
         });
@@ -64,6 +67,13 @@ public class EditNoteActivity extends AppCompatActivity {
     private void findViews() {
         mNameEdt = findViewById(R.id.edt_note_name);
         mContentEdt = findViewById(R.id.edt_note_content);
+    }
+
+    private void saveNote() {
+        NotesDao notesDao = new NotesDao(EditNoteActivity.this);
+        notesDao.open();
+        notesDao.insertNote(mNameEdt.getText().toString(), mContentEdt.getText().toString());
+        notesDao.close();
     }
 }
 

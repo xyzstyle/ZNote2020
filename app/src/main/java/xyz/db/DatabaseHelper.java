@@ -30,6 +30,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
     private void createTableNotes(SQLiteDatabase db) {
         String createTableNotes = "create table " + D.Tables.NOTES + "("
                 + D.Notes.KEY_ROW_ID + " INTEGER PRIMARY KEY,"
+                + D.Notes.FIELD_NOTE_BOOK_ID+" INTEGER,"
                 + D.Notes.FIELD_NOTE_NAME + " TEXT,"
                 + D.Notes.FIELD_NOTE_CONTENT + " TEXT,"
                 + D.Notes.FIELD_CREATED + "  DATETIME" + ");";
