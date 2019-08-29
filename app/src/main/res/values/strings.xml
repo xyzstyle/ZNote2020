@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">zNote</string>
+    <string name="app_name1">向阳笔记</string>
     <string name="note_title">新建笔记</string>
     <string name="note_content">开始书写</string>
     <string name="menu_save_note">保存笔记</string>
@@ -11,6 +12,9 @@
     <string name="menu_remind">设置提醒</string>
     <string name="menu_font_size">字体大小</string>
     <string name="menu_note_msg">笔记信息</string>
+    <string name="menu_sync">同步</string>
+    <string name="menu_search">查找</string>
+    <string name="menu_sort">排序</string>
     <string name="menu_search_in_note">笔记内查找</string>
     <string name="note_text_temp">Styles and themes on Android allow you to separate the details of your app design from the UI structure and behavior, similar to stylesheets in web design.
         A style is a collection of attributes that specify the appearance for a single View. A style can specify attributes such as font color, font size, background color, and much more.
@@ -21,5 +25,8 @@
         For example, if you define the following style:
         When creating your own styles, you should always extend an existing style from the framework or support library so that you maintain compatibility with platform UI styles. To extend a style, specify the style you want to extend with the parent attribute. You can then override the inherited style attributes and add new ones.
     </string>
+    <string name="notes">全部笔记</string>
+    <string name="note_books">笔记本</string>
+    <string name="tags">标签</string>
 
 </resources>

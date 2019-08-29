@@ -12,6 +12,8 @@
 
     <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="actionMenuTextColor">#ffffff</item>
+        <item name="android:colorBackground">#ffffff</item>
+        <item name="android:textColor">#ff000000</item>
         <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
     </style>
 
